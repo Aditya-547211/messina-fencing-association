@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Championships (Junior) | ASSOCIAZIONE MESSINA SCHERMA</title>
+    <link rel="stylesheet" href="look.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        .photo-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .photo-item {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo-item:hover {
+            transform: scale(1.03);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="logo.png" alt="Messina Fencing Association logo" class="nav-logo">
+        </a>
+        <div class="nav-content">
+            <div class="nav-title">Messina Fencing Association</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="announcement.html">Announcements</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <a href="gallery.html" class="back-btn">← Back to Gallery Overview</a>
+        
+        <header class="section-heading">
+            <h1>Regional Championships (Junior)</h1>
+            <p class="section-sub">Our youngest musketeers learning coordination grids and early weapon safety rules.</p>
+        </header>
+
+        <div class="photo-matrix">
+            <img src="g5.JPG" alt="Junior Athlete Action 1" class="photo-item">
+            <img src="g17.JPG" alt="Junior Footwork Grid" class="photo-item">
+            <img src="g18.JPG" alt="Youth Blade Drills" class="photo-item">
+            <img src="news-qualificazioni.jpg" alt="Junior Strip Match" class="photo-item">
+            <img src="youth.JPG" alt="Tactical Preparation" class="photo-item">
+            <img src="g19.JPG" alt="Junior Squad Group" class="photo-item">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Messina Fencing Association. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
