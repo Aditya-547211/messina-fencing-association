@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | ASSOCIAZIONE MESSINA SCHERMA</title>
+    <link rel="stylesheet" href="look.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Small layout optimizations for form interaction */
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue) !important;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-blue) !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="logo.png" alt="Logo Associazione Messina Scherma" class="nav-logo">
+        </a>
+        <div class="nav-content">
+            <div class="nav-title">Associazione Messina Scherma</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="announcement.html">Comunicati</a>
+                <a href="about.html">Chi Siamo</a>
+                <a href="gallery.html">Galleria</a>
+                <a href="contact.html" class="active">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <header class="section-heading">
+            <h1>Contatta la Nostra Sala</h1>
+            <p class="section-sub">Sali in pedana con noi. Scrivici per lezioni di prova, iscrizioni ai corsi o informazioni sulle gare.</p>
+        </header>
+
+        <section class="discipline-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 900px; margin: 0 auto; gap: 30px;">
+            
+            <article class="discipline-card" style="text-align: left; align-self: start;">
+                <div class="card-body" style="padding: 30px;">
+                    <h3 style="color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; font-weight: 700;">Sede e Segreteria</h3>
+                    
+                    <p style="margin-bottom: 20px; line-height: 1.6; color: #334155;">
+                        <strong style="color: var(--navy-dark);">Sede di Allenamento:</strong><br>
+                        Palestra del Collegio S. Ignazio<br>
+                        Messina, Italia
+                    </p>
+
+                    <p style="margin-bottom: 20px; line-height: 1.6; color: #334155;">
+                        <strong style="color: var(--navy-dark);">Orari Segreteria e Iscrizioni:</strong><br>
+                        Lunedì, Mercoledì, Venerdì<br>
+                        17:00 – 20:30
+                    </p>
+
+                    <p style="line-height: 1.6; color: #334155;">
+                        <strong style="color: var(--navy-dark);">Recapiti:</strong><br>
+                        Email: <a href="mailto:papalia75@hotmail.com" style="color: var(--primary-blue); text-decoration: none; font-weight: 600;">papalia75@hotmail.com</a><br>
+                        PEC: <a href="mailto:messinascherma@arubapec.it" style="color: var(--primary-blue); text-decoration: none; font-weight: 600;">messinascherma@arubapec.it</a><br>
+                        Telefono: <a href="tel:+393498160798" style="color: var(--primary-blue); text-decoration: none; font-weight: 600;">+39 349 816 0798</a> / <a href="tel:+393407723212" style="color: var(--primary-blue); text-decoration: none; font-weight: 600;">+39 340 772 3212</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="discipline-card" style="text-align: left;">
+                <div class="card-body" style="padding: 30px;">
+                    <h3 style="color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; font-weight: 700;">Invia un Messaggio</h3>
+                    
+                    <form action="https://formspree.io/f/moedpanz" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; text-transform: uppercase; color: var(--navy-dark); letter-spacing: 0.5px;">Nome e Cognome</label>
+                            <input type="text" name="full_name" required placeholder="Il tuo nome" class="form-input" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-family: inherit; box-sizing: border-box; transition: all 0.2s;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; text-transform: uppercase; color: var(--navy-dark); letter-spacing: 0.5px;">Indirizzo Email</label>
+                            <input type="email" name="email" required placeholder="nome@esempio.it" class="form-input" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-family: inherit; box-sizing: border-box; transition: all 0.2s;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; text-transform: uppercase; color: var(--navy-dark); letter-spacing: 0.5px;">Gruppo / Interesse</label>
+                            <select name="weapon_group" class="form-select" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-family: inherit; box-sizing: border-box; background: white; transition: all 0.2s;">
+                                <option value="Scherma Baby (4-7 anni)">Scherma Baby (4-7 anni)</option>
+                                <option value="Gruppi Giovanili Fioretto / Spada">Gruppi Giovanili Fioretto / Spada</option>
+                                <option value="Agonisti Adulti / Master">Agonisti Adulti / Master</option>
+                                <option value="Richiesta Istituzionale Generale">Richiesta Istituzionale Generale</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; text-transform: uppercase; color: var(--navy-dark); letter-spacing: 0.5px;">Messaggio</label>
+                            <textarea name="message" rows="4" required placeholder="Come possiamo aiutarti a preparare il tuo ingresso in pedana?" class="form-textarea" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-family: inherit; box-sizing: border-box; resize: vertical; transition: all 0.2s;"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" style="background-color: var(--accent-gold); color: var(--navy-dark); font-weight: 700; border: none; padding: 12px; border-radius: 4px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: all 0.2s; font-family: 'Montserrat', sans-serif;">
+                            Invia Richiesta
+                        </button>
+                    </form>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Associazione Messina Scherma. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
